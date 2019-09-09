@@ -9,7 +9,7 @@ from .timeline import Timeline
 
 class LINE(Auth, Models, Talk, Square, Call, Timeline):
 
-    def __init__(self, idOrAuthToken=None, passwd=None, certificate=None, systemName=None, appName=None, showQr=False, keepLoggedIn=True):
+    def __init__(self, idOrAuthToken=None, passwd=None, certificate=None, systemName=None, appName=None, showQr=True, keepLoggedIn=True):
         
         Auth.__init__(self)
         if not (idOrAuthToken or idOrAuthToken and passwd):
